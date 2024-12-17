@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial - Blog Style</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-nav">
+            <h1>Simple Blog Post Management</h1>
+            
+        </header>
+        
+        <main>
+            <section class="fetch-section">
+                <button id="fetchDataBtn" class="fetch-btn">Fetch Data</button>
+                <pre id="output" class="output"></pre>
+            </section>
+
+            <section class="form-section">
+                <h2 class="add-h2">Add a New Post</h2>
+                <form id="dataForm">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" class="input" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Content:</label>
+                        <textarea id="body" class="textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Add Post</button>
+                </form>
+            </section>
+
+            <section class="posts-section">
+                <h2>Posts</h2>
+                <ul id="dataList" class="data-list"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
